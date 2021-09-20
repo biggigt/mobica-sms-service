@@ -1,0 +1,13 @@
+const express = require("express");
+const cors = require("cors");
+const smsRouter = require("../routes/sms.routes");
+
+const PORT = process.env.PORT || 3000;
+
+const service = express();
+
+service.use(cors());
+service.use(express.json());
+service.use("/sms", smsRouter);
+
+service.listen(PORT, () => console.log(`SMS service started on port ${PORT}`));
