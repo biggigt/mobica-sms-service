@@ -48,8 +48,8 @@ Check balance of account in Mobica | GET | http://localhost:3000/sms/balance | S
 ### Sample response
 ```json
 {
- "status": "1004" , 
- "desc": "message accepted" ,
+    "status": "1004" , 
+    "desc": "message accepted" ,
 }
 ```
 
